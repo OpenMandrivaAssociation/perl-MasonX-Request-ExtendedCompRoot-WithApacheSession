@@ -11,6 +11,7 @@ Source0:	http://search.cpan.org/dists/%{realname}-%{version}.tar.bz2
 BuildRequires:	perl(MasonX::Request::ExtendedCompRoot)
 BuildRequires:	perl(MasonX::Request::WithApacheSession)
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 This  module simply integrates "MasonX::Request::ExtendedCompRoot"
