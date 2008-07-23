@@ -3,7 +3,7 @@
 Summary:	Extend functionality of Mason's comp_root and add a session to the Mason Request object
 Name:           perl-%{realname}
 Version:        0.03
-Release:        %mkrel 2
+Release:        %mkrel 4
 License:	GPL
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{realname}
