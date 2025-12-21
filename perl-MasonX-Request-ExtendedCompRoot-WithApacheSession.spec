@@ -11,6 +11,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/dists/%{upstream_name}-%{upstream_version}.tar.bz2 
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(MasonX::Request::ExtendedCompRoot)
 BuildRequires:	perl(MasonX::Request::WithApacheSession)
