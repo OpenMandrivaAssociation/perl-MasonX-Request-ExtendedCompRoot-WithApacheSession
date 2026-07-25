@@ -1,15 +1,15 @@
 %define upstream_name    MasonX-Request-ExtendedCompRoot-WithApacheSession
-%define upstream_version 0.03
+%define upstream_version 0.04
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Integrates MasonX::Request ::ExtendedCompRoot and ::WithApacheSession
 License:	GPL
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/dists/%{upstream_name}-%{upstream_version}.tar.bz2 
+Url:		https://metacpan.org/dist/MasonX-Request-ExtendedCompRoot-WithApacheSession
+Source0:	https://cpan.metacpan.org/authors/id/S/SG/SGP/MasonX-Request-ExtendedCompRoot-WithApacheSession-%{upstream_version}.tar.gz 
 
 BuildRequires:	make
 BuildRequires:	perl-devel
