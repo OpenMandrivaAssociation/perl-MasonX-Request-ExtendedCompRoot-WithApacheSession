@@ -1,15 +1,13 @@
 %define upstream_name    MasonX-Request-ExtendedCompRoot-WithApacheSession
-%define upstream_version 0.04
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.04
+Release:	2
 
 Summary:	Integrates MasonX::Request ::ExtendedCompRoot and ::WithApacheSession
 License:	GPL
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/MasonX-Request-ExtendedCompRoot-WithApacheSession
-Source0:	https://cpan.metacpan.org/authors/id/S/SG/SGP/MasonX-Request-ExtendedCompRoot-WithApacheSession-%{upstream_version}.tar.gz 
+Source0:	https://cpan.metacpan.org/authors/id/S/SG/SGP/MasonX-Request-ExtendedCompRoot-WithApacheSession-%{version}.tar.gz 
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -25,7 +23,7 @@ This  module simply integrates "MasonX::Request::ExtendedCompRoot"
 and "MasonX::Request::WithApacheSession".
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor 
@@ -46,9 +44,7 @@ make test
 %changelog
 * Sat Aug 01 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.30.0-1mdv2010.0
 + Revision: 405914
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.03-4mdv2009.0
+- rebuild using %0.04 Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.03-4mdv2009.0
 + Revision: 241723
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request
